@@ -64,6 +64,14 @@ class FormValidator {
     this._setEventListeners();
   }
 
+  resetValidation() {
+    this._inputList.forEach((inputElement) => {
+      inputElement.value = "";
+      this._hideInputError(this._formEl, inputElement);
+      this._toggleButtonState();
+    });
+  }
+
   _toggleButtonState() {
     const buttonElement = this._formEl.querySelector(
       this._submitButtonSelector
@@ -75,13 +83,6 @@ class FormValidator {
       buttonElement.classList.remove(this._inactiveButtonClass);
       buttonElement.disabled = false;
     }
-  }
-
-  resetValidation() {
-    this._inputList.forEach((inputElement) => {
-      inputElement.value = "";
-      this._hideInputError(this._formEl, inputElement);
-    });
   }
 }
 
