@@ -17,11 +17,14 @@ class Popup {
 
   close() {
     this._popupElement.classList.remove("popup_visible");
+    document.removeEventListener("keyup", this._handleEscapeClose);
   }
 
   setEventListeners() {
-    this._popupCloseBtn.addEventListener("click", () => {
-      this.close();
+    this._popupElement.addEventListener("mousedown", (evt) => {
+      if (evt.target === this._popupElement || evt.target === this._popupCloseBtn) {
+        this.close();
+      }
     });
   }
 }
