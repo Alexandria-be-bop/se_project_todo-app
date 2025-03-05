@@ -33,7 +33,7 @@ const renderTodo = (data) => {
 const addTodoPopup = new PopupWithForm({
   popupSelector: "#add-todo-popup",
   handleFormSubmit: (inputValues) => {
-    inputValues.id = uuidv4();  // add the `id` into the `inputValues` object
+    inputValues.id = uuidv4(); 
     renderTodo(inputValues);
 
     date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
