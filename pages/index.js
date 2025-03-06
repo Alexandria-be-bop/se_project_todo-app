@@ -35,10 +35,6 @@ const addTodoPopup = new PopupWithForm({
   handleFormSubmit: (inputValues) => {
     inputValues.id = uuidv4();
     renderTodo(inputValues);
-
-    const date = new Date(inputValues.date);
-    date.setMinutes(date.getMinutes() + date.getTimezoneOffset());
-
     todoCounter.updateTotal(true);
     addTodoPopup.close();
   },
