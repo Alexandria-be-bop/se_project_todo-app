@@ -1,17 +1,27 @@
 # Simple Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+A todo application built with vanilla JavaScript and ES6 modules, featuring clean architecture and form validation.
 
-## Functionality
+## Features
 
-Give a more detailed explanation of the project and its functionality.
+- **Add/Delete Todos**: Create and remove todo items with optional due dates
+- **Mark Complete**: Toggle completion status with checkboxes
+- **Real-time Counter**: Track completed vs total todos
+- **Form Validation**: Client-side validation with visual feedback
+- **Modal Interface**: Popup form with keyboard support (ESC to close)
+- **Responsive Design**: Clean UI that works on all devices
 
-## Technology
+## Technology Stack
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+- **Frontend**: HTML5, CSS3, Vanilla JavaScript (ES6+)
+- **Architecture**: Component-based classes with ES6 modules
+- **Libraries**: UUID for unique IDs, JSPM for module loading
+- **Styling**: BEM methodology, Normalize.css, Inter font
+- **Features**: Template system, event delegation, form validation
 
-## Deployment
 
-This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+
+
+
+
